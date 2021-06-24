@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        box-sizing: border-box;
+        font-family: Consolas, monospace;
+      }
+      h1 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      .mc-a {
+        width: 400px;
+        margin: 0px auto;
+        position: relative
+      }
+      .mc-c {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+      }
+      .mc-a:hover .mc-c {
+        display: block;
+      }
+      .mc-c {
+     position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+    .mc-a:hover .mc-c {
+    opacity: 1;
+}
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <div class="mc-a">
+      <img src="image/Squad1.jpg" alt="" class="mc-b">
+      <img src="image/Squad2.jpg" alt="" class="mc-c">
+    </div>
+  </body>
+</html>
